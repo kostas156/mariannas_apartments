@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marianna's Apartments</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Marianna's Apartments</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="room.html">Room 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="room2.html">Room 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container mt-5" id="welcome">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="header-content text-center text-md-left">
+            <h1>Welcome to Marianna's Apartments</h1>
+            <p>Find the perfect room for your stay</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="header-image text-center text-md-right">
+            <img class="img-fluid" src="assets/img/logo.png" alt="Apartment Logo Icon" width="150px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="studio-room-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="studio-title">Studio Apartment</h2>
+          <p>This studio apartment is an ideal choice for families or groups of up to 4 people. With a room size of 35 sqm, it offers a comfortable and inviting living space. The apartment features a modern design and is equipped with a range of amenities for your convenience and comfort.</p>
+          <button class="btn studio-room-more-info-btn btn-primary" onclick="window.location.href = 'room.html';">More Info</button>
+        </div>
+        <div class="col-md-6">
+          <div class="studio-slideshow-container">
+            <div class="studio-mySlides fade">
+              <img src="assets/img/room1/room1_1.jpg">
+            </div>
+            <div class="studio-mySlides fade">
+              <img src="assets/img/room1/room1_2.jpg">
+            </div>
+            <div class="studio-mySlides fade">
+              <img src="assets/img/room1/room1_3.jpg">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="studio-prev" onclick="studio_plusSlides(-1)">&#10094;</a>
+            <a class="studio-next" onclick="studio_plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="text-center">
+            <span class="studio-dot" onclick="studio_currentSlide(1)"></span>
+            <span class="studio-dot" onclick="studio_currentSlide(2)"></span>
+            <span class="studio-dot" onclick="studio_currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="big-room-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <h2 class="big-apartment-title">Big Apartment</h2>
+          <p>Big apartment with 2 levels. Ideal for families and big groups up to 8 people. The apartment features a modern design and is equipped with a range of amenities for your convenience. The apartment includes a fully equipped kitchen, allowing you to prepare your meals during your stay.</p>
+          <button class="btn big-room-more-info-btn btn-primary" onclick="window.location.href = 'room2.html';">More Info</button>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <div class="big-slideshow-container">
+            <div class="big-mySlides fade">
+              <img src="assets/img/room2/room2_1.jpg">
+            </div>
+            <div class="big-mySlides fade">
+              <img src="assets/img/room2/room2_2.jpg">
+            </div>
+            <div class="big-mySlides fade">
+              <img src="assets/img/room2/room2_5.jpg">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="big-prev" onclick="big_plusSlides(-1)">&#10094;</a>
+            <a class="big-next" onclick="big_plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="text-center">
+            <span class="big-dot" onclick="big_currentSlide(1)"></span>
+            <span class="big-dot" onclick="big_currentSlide(2)"></span>
+            <span class="big-dot" onclick="big_currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-section">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="contact-info no-bullets">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://www.google.com/maps?q=40.241670,23.283584" target="_blank">
+                  Dimitriou Tzavoura 2, Nea Moudania, Greece
+                </a>
+              </li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:m.polianidou1974@gmail.com" class="contact-link">marrentapartments@gmail.com</a></li>
+              <li>
+                <i class="fas fa-phone"></i> <a href="tel:+301234567890" class="contact-link">+30 697 998 3261</a> - Ελληνικά, Русский
+                <i class="fab fa-whatsapp whatsapp-icon"></i>
+                <i class="fab fa-viber viber-icon"></i>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i> <a href="tel:+301234567890" class="contact-link">+30 698 827 7224</a> - Ελληνικά, English
+                <i class="fab fa-whatsapp whatsapp-icon"></i>
+                <i class="fab fa-viber viber-icon"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-section">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100095772631201" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="footer-text">&copy; 2023 Marianna's Apartments. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/room_script.js"></script>
+   <script src="C:\Users\Kostas\Desktop\New folder\assets\lightbox2\src\js\lightbox.js"></script> <!-- Include the Lightbox JavaScript file -->
+</body>
+</html>
