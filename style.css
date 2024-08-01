@@ -493,6 +493,9 @@ ul li {
   .header-image {
     margin-top: 20px;
   }
+  header{
+    margin-top: 100px;
+  }
 }
 
 @media (max-height: 820px) {
